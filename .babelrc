@@ -1,0 +1,38 @@
+{
+  "presets": [
+    "module:metro-react-native-babel-preset",
+    "module:react-native-dotenv"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-flow-strip-types",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "module-resolver",
+      {
+        "cwd": "babelrc",
+        "root": ["./"],
+        "extensions": [
+          ".ios.js",
+          ".android.js",
+          ".js",
+          ".json",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ],
+        "alias": {
+          "@root": "./src",
+          "@app": "./src/app",
+          "@components": "./src/components",
+          "@services": "./src/services",
+          "@styles": "./src/styles",
+          "@screens": "./src/screens",
+          "@assets": "./src/assets",
+          "@constants": "./src/constants",
+          "@routes": "./src/routes",
+          "@interfaces": "./src/interfaces"
+        }
+      }
+    ]
+  ]
+}
