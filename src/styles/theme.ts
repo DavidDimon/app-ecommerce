@@ -5,7 +5,7 @@ export const theme: ITheme = {
   colors: {
     background: {
       dark: '#3d3d3d',
-      light: '#FAFAFA',
+      light: '#f3f4f6',
     },
     default: {
       dark: '#fff',
@@ -17,7 +17,7 @@ export const theme: ITheme = {
     },
     brand: {
       dark: '#637373',
-      light: '#637373'
+      light: '#637373',
     },
     error: {
       light: '#EE634E',
@@ -30,6 +30,10 @@ export const theme: ITheme = {
     text: {
       light: '#000',
       dark: '#fff',
+    },
+    cardBackground: {
+      light: '#fff',
+      dark: '#1c1c1c',
     },
     opposite: (mode: string, type: string) => {
       // @ts-ignore

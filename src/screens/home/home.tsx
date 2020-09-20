@@ -1,16 +1,23 @@
 import React from 'react'
-import { View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
-import { Text, InputText, Icon, Header, ProductsList } from '@components'
+import {
+  InputText,
+  Icon,
+  Header,
+  ProductsList,
+  CardProduct,
+  Layout,
+} from '@components'
 import { WrapperSearch, Space } from './styles'
 
 import { products } from '@constants/products'
+import { IProduct } from '@interfaces/product'
 
 export const Home = (): Element => {
   const navigation = useNavigation()
   return (
-    <View>
+    <Layout>
       <Header
         title="Home"
         rightIcon="cart"
@@ -22,7 +29,9 @@ export const Home = (): Element => {
         </WrapperSearch>
       </Header>
       <Space />
-      <ProductsList items={products} />
-    </View>
+      <ProductsList items={products} numColumns={2}>
+        {(product: IProduct) => <CardProduct {...product} />}
+      </ProductsList>
+    </Layout>
   )
 }

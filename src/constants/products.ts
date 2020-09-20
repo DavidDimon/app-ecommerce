@@ -1,4 +1,4 @@
-const baseUrl = '@assets/images/products'
+import image1 from '@assets/images/products/1.jpeg'
 
 export const products = [
   {
@@ -7,8 +7,8 @@ export const products = [
     description: 'test description 1',
     price: 5,
     discount: 5,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 2,
@@ -16,8 +16,8 @@ export const products = [
     description: 'test description 2',
     price: 10,
     discount: 10,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 3,
@@ -25,8 +25,8 @@ export const products = [
     description: 'test description 3',
     price: 150,
     discount: 20,
-    review: [5, 3, 5, 5, 4],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5, 5, 4],
+    images: [image1, image1],
   },
   {
     id: 4,
@@ -34,8 +34,8 @@ export const products = [
     description: 'test description 4',
     price: 130,
     discount: 0,
-    review: [5, 3],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3],
+    images: [image1, image1],
   },
   {
     id: 5,
@@ -43,8 +43,8 @@ export const products = [
     description: 'test description 5',
     price: 120,
     discount: 0,
-    review: [5, 2, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 2, 5],
+    images: [image1, image1],
   },
   {
     id: 6,
@@ -52,8 +52,8 @@ export const products = [
     description: 'test description 6',
     price: 100,
     discount: 0,
-    review: [5, 1, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 1, 5],
+    images: [image1, image1],
   },
   {
     id: 7,
@@ -61,8 +61,8 @@ export const products = [
     description: 'test description 7',
     price: 103,
     discount: 0,
-    review: [1, 1, 0],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [1, 1, 0],
+    images: [image1, image1],
   },
   {
     id: 8,
@@ -70,8 +70,8 @@ export const products = [
     description: 'test description 8',
     price: 200,
     discount: 0,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 9,
@@ -79,8 +79,8 @@ export const products = [
     description: 'test description 9',
     price: 10,
     discount: 35,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 10,
@@ -88,8 +88,8 @@ export const products = [
     description: 'test description 10',
     price: 51,
     discount: 50,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 11,
@@ -97,8 +97,8 @@ export const products = [
     description: 'test description 11',
     price: 345,
     discount: 0,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 12,
@@ -106,8 +106,8 @@ export const products = [
     description: 'test description 12',
     price: 235,
     discount: 0,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 13,
@@ -115,8 +115,8 @@ export const products = [
     description: 'test description 13',
     price: 255,
     discount: 0,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 14,
@@ -124,8 +124,8 @@ export const products = [
     description: 'test description 14',
     price: 325,
     discount: 0,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 15,
@@ -133,8 +133,8 @@ export const products = [
     description: 'test description 15',
     price: 553,
     discount: 0,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
   {
     id: 16,
@@ -142,7 +142,7 @@ export const products = [
     description: 'test description 16',
     price: 566,
     discount: 0,
-    review: [5, 3, 5],
-    images: [`${baseUrl}/1.jpeg`, `${baseUrl}/1.jpeg`],
+    reviews: [5, 3, 5],
+    images: [image1, image1],
   },
 ]

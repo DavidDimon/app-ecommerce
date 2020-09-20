@@ -1,5 +1,4 @@
 import React from 'react'
-import { SafeAreaView } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import { Text, Icon } from '@components/atoms'

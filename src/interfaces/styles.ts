@@ -17,5 +17,6 @@ export interface IColors {
   error: IColor
   placeholder: IColor
   text: IColor
+  cardBackground: IColor
   opposite: (mode: string, type: string) => string
 }
