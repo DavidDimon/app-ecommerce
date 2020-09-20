@@ -14,7 +14,7 @@ import { WrapperSearch, Space } from './styles'
 import { products } from '@constants/products'
 import { IProduct } from '@interfaces/product'
 
-export const Home = (): Element => {
+export const Home = () => {
   const navigation = useNavigation()
   return (
     <Layout>
@@ -29,7 +29,7 @@ export const Home = (): Element => {
         </WrapperSearch>
       </Header>
       <Space />
-      <ProductsList items={products} numColumns={2}>
+      <ProductsList items={products} numColumns={2} hasPagination>
         {(product: IProduct) => <CardProduct {...product} />}
       </ProductsList>
     </Layout>

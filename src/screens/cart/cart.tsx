@@ -8,7 +8,7 @@ import { products } from '@constants/products'
 import { useCartStore } from '@services/store'
 import { getTotal } from '@services/utils/products'
 
-export const Cart = (): Element => {
+export const Cart = () => {
   const { productIds } = useCartStore()
   const itemsOnCart: Array<IProduct> = React.useMemo(
     () =>

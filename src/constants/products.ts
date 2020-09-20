@@ -1,5 +1,36 @@
 import image1 from '@assets/images/products/1.jpeg'
 
+const reviewMock1 = [
+  {
+    author: 'John Doe',
+    rate: 5,
+    commentary: 'amazing',
+  },
+  {
+    author: 'Jane Doe',
+    rate: 3,
+    commentary: 'nice',
+  },
+  {
+    author: 'Joseph',
+    rate: 1,
+    commentary: 'Terrible',
+  },
+]
+
+const reviewMock2 = [
+  {
+    author: 'John Doe',
+    rate: 2,
+    commentary: 'amazing',
+  },
+  {
+    author: 'Joseph',
+    rate: 5,
+    commentary: 'Nice',
+  },
+]
+
 export const products = [
   {
     id: 1,
@@ -7,7 +38,7 @@ export const products = [
     description: 'test description 1',
     price: 5,
     discount: 5,
-    reviews: [5, 3, 5],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
   {
@@ -16,7 +47,7 @@ export const products = [
     description: 'test description 2',
     price: 10,
     discount: 10,
-    reviews: [5, 3, 5],
+    reviews: reviewMock2,
     images: [image1, image1],
   },
   {
@@ -25,7 +56,7 @@ export const products = [
     description: 'test description 3',
     price: 150,
     discount: 20,
-    reviews: [5, 3, 5, 5, 4],
+    reviews: reviewMock2,
     images: [image1, image1],
   },
   {
@@ -34,7 +65,7 @@ export const products = [
     description: 'test description 4',
     price: 130,
     discount: 0,
-    reviews: [5, 3],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
   {
@@ -43,7 +74,7 @@ export const products = [
     description: 'test description 5',
     price: 120,
     discount: 0,
-    reviews: [5, 2, 5],
+    reviews: reviewMock2,
     images: [image1, image1],
   },
   {
@@ -52,7 +83,7 @@ export const products = [
     description: 'test description 6',
     price: 100,
     discount: 0,
-    reviews: [5, 1, 5],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
   {
@@ -61,7 +92,7 @@ export const products = [
     description: 'test description 7',
     price: 103,
     discount: 0,
-    reviews: [1, 1, 0],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
   {
@@ -70,7 +101,7 @@ export const products = [
     description: 'test description 8',
     price: 200,
     discount: 0,
-    reviews: [5, 3, 5],
+    reviews: reviewMock2,
     images: [image1, image1],
   },
   {
@@ -79,7 +110,7 @@ export const products = [
     description: 'test description 9',
     price: 10,
     discount: 35,
-    reviews: [5, 3, 5],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
   {
@@ -88,7 +119,7 @@ export const products = [
     description: 'test description 10',
     price: 51,
     discount: 50,
-    reviews: [5, 3, 5],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
   {
@@ -97,7 +128,7 @@ export const products = [
     description: 'test description 11',
     price: 345,
     discount: 0,
-    reviews: [5, 3, 5],
+    reviews: reviewMock2,
     images: [image1, image1],
   },
   {
@@ -106,7 +137,7 @@ export const products = [
     description: 'test description 12',
     price: 235,
     discount: 0,
-    reviews: [5, 3, 5],
+    reviews: reviewMock2,
     images: [image1, image1],
   },
   {
@@ -115,7 +146,7 @@ export const products = [
     description: 'test description 13',
     price: 255,
     discount: 0,
-    reviews: [5, 3, 5],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
   {
@@ -124,7 +155,7 @@ export const products = [
     description: 'test description 14',
     price: 325,
     discount: 0,
-    reviews: [5, 3, 5],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
   {
@@ -133,7 +164,7 @@ export const products = [
     description: 'test description 15',
     price: 553,
     discount: 0,
-    reviews: [5, 3, 5],
+    reviews: reviewMock2,
     images: [image1, image1],
   },
   {
@@ -142,7 +173,7 @@ export const products = [
     description: 'test description 16',
     price: 566,
     discount: 0,
-    reviews: [5, 3, 5],
+    reviews: reviewMock1,
     images: [image1, image1],
   },
 ]

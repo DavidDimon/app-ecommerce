@@ -1,8 +1,8 @@
-import { IProduct } from '@interfaces/product'
+import { IProduct, IReview } from '@interfaces/product'
 
-export const getRating = (reviews: Array<number>) => {
+export const getRating = (reviews: Array<IReview>) => {
   if (!reviews?.length) return 'No reviews yet'
-  const sumReview = reviews.reduce((memo: number, cur: number) => memo + cur, 0)
+  const sumReview = reviews.reduce((memo: number, cur: IReview) => memo + cur.rate, 0)
   return (sumReview / reviews.length).toFixed(1)
 }
 
