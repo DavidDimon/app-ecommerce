@@ -15,7 +15,7 @@ interface IProductsList {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
+    alignItems: 'flex-start',
   },
   fullWrapper: {
     width: Dimensions.get('window').width - 10,
@@ -30,24 +30,31 @@ const ProductsList = ({
   hasPagination,
 }: IProductsList) => {
   const [page, setPage] = React.useState<number>(1)
-  const [data, setData] = React.useState<Array<IProduct>>(items.slice(0, 10))
 
   const handleOnEndReached = React.useCallback(() => {
     const maxPages = Math.round(items.length / 10.4)
     if (page < maxPages) {
-      const current = page + 1
-      setData(items.slice(0, 10 * current))
-      setPage(current)
+      setPage(page + 1)
     }
   }, [])
 
+  const list = React.useMemo(() => {
+    if (hasPagination) return items.slice(0, 10 * page)
+
+    return items
+  }, [items, page])
+
+  React.useEffect(() => {
+    if (hasPagination) setPage(1)
+  }, [items])
+
   return (
     <FlatList
-      data={hasPagination ? data : items}
+      extraData={list}
+      data={list}
       onEndReachedThreshold={0.05}
       onEndReached={hasPagination ? handleOnEndReached : null}
       contentContainerStyle={styles.container}
-      extraData={items}
       numColumns={numColumns}
       keyExtractor={(item, index) => `${item}_${index}`}
       renderItem={({ item, index }: { item: IProduct; index: number }) => (

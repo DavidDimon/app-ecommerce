@@ -6,7 +6,7 @@ import normalize from '@styles/normalize'
 import { ITheme } from '@interfaces/styles'
 
 export const Card = styled.View`
-  width: ${(Dimensions.get('window').width - normalize(10)) / 2}px;
+  width: ${(Dimensions.get('window').width) / 2}px;
   padding-horizontal: ${normalize(10)}px;
   margin-bottom: ${normalize(12)}px;
 `

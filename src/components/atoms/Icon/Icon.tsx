@@ -14,14 +14,17 @@ interface IIcon {
   color: string
 }
 
-const Icon = ({ hasBackground, bgColor, onPress, ...props }: IIcon) => (
-  <IconWrapper
-    onPress={onPress}
-    hasBackground={hasBackground}
-    bgColor={bgColor}
-  >
+const Icon = ({ hasBackground, bgColor, onPress, ...props }: IIcon) =>
+  !!onPress ? (
+    <IconWrapper
+      onPress={onPress}
+      hasBackground={hasBackground}
+      bgColor={bgColor}
+    >
+      <VectorIcon {...props} />
+    </IconWrapper>
+  ) : (
     <VectorIcon {...props} />
-  </IconWrapper>
-)
+  )
 
 export default Icon
