@@ -17,9 +17,15 @@
 ## Structure
 
 - Components (atomic design based)
-- Screens 
+- Screens
 - Services (alot of functions separated by your use, example -> database)
 - Routes
 - Styles (static styles props(example -> colors))
 - Constants (constants of app separated by entity or screen)
 - Interfaces (most commons interfaces)
+
+## ScreenShots
+
+<img  alt="Home"  src=".github/images/home.png"  width="40%">
+<img  alt="Cart"  src=".github/images/cart.png"  width="40%">
+<img  alt="Product"  src=".github/images/product.png"  width="40%">
